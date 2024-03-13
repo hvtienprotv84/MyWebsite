@@ -254,7 +254,7 @@ p{
   cursor: pointer;
   /* padding: 15px; */
   border-radius: 20px;
-  background-image: url("/images/ontop.png");
+  background-image: url("../images/ontop.png");
   width:60px;
   height:60px;
   background-position: center center;
