@@ -1,0 +1,82 @@
+
+.border__content__skill{
+  width: 400px;
+  border-bottom: 5px dashed rgb(0, 0, 0);
+  margin-top:40px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.content__skill {
+    padding: 20px;
+    text-align: center;
+  }
+
+  .myskill {
+    font-size: 30px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+    font-family: 'Poppins', sans-serif;
+    border: 3px dashed rgb(255, 255, 255);
+  }
+  .container__border__myskill{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .border__myskill{
+    border: 2px solid #333;
+    border-radius: 10px;
+    padding: 20px;
+    width: 1000px;
+    height: 400px;
+  }
+
+  .image__container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+    justify-items: center; /* Căn giữa theo chiều ngang */
+  }
+  
+  .image__border__myskill {
+    position: absolute;
+    top:800px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: space-between; /* Tạo khoảng cách 10px giữa các ảnh */
+    max-width: 1000px;
+  }
+  
+  .image__border__myskill img {
+    width: 140px;
+    height: 140px;
+    margin-right: 50px; /* Tạo khoảng cách 10px giữa các ảnh */
+  }
+  
+  .image__border__myskill img:last-child {
+    margin-right: 0; /* Loại bỏ margin phía bên phải của ảnh cuối cùng */
+  }
+
+
+  .image__border__myskill__2 {
+    position: absolute;
+    top:1000px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: space-between; /* Tạo khoảng cách 10px giữa các ảnh */
+    max-width: 1000px;
+  }
+  
+  .image__border__myskill__2 img {
+    width: 140px;
+    height: 140px;
+    margin-right: 50px; /* Tạo khoảng cách 10px giữa các ảnh */
+  }
+  
+  .image__border__myskill__2 img:last-child {
+    margin-right: 0; /* Loại bỏ margin phía bên phải của ảnh cuối cùng */
+  }

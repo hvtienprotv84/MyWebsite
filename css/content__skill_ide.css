@@ -1,0 +1,61 @@
+
+.border__myskill__ide__container{
+    width: 240px;
+    border-bottom: 5px dashed rgb(0, 0, 0);
+    margin-top:40px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.myskill__ide__container {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .myskill__ide {
+    font-size: 30px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+    font-family: 'Poppins', sans-serif;
+    padding-top:5px;
+  }
+  .container__border__myskill_ide{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .border__myskill__ide{
+    border: 2px solid #333;
+    border-radius: 10px;
+    padding: 20px;
+    width: 1000px;
+    height: 200px;
+  }
+
+  .image__container__myskill__ide {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+    justify-items: center; /* Căn giữa theo chiều ngang */
+  }
+  
+  .image__border__myskill__ide {
+    position: absolute;
+    top:2080px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: space-between; /* Tạo khoảng cách 10px giữa các ảnh */
+    max-width: 1000px;
+  }
+  
+  .image__border__myskill__ide img {
+    width: 140px;
+    height: 140px;
+    margin-right: 50px; /* Tạo khoảng cách 10px giữa các ảnh */
+  }
+  
+  .image__border__myskill__ide img:last-child {
+    margin-right: 0; /* Loại bỏ margin phía bên phải của ảnh cuối cùng */
+  }

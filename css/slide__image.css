@@ -1,0 +1,69 @@
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1000px;
+    height: 500px;
+    overflow: hidden;
+    margin: 0 auto;
+    max-height: 550px;
+  }
+  
+  .image-container img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+    border-radius: 20px;
+    /* border: 3px solid red; */
+  }
+  
+  .button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 200px;
+    position: absolute;
+  }
+  
+  button {
+    margin-top: 10px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .left-button {
+    margin-right: 10px;
+    /* background-image: url("images/muitien_trai.gif"); */
+    left: 5%;
+    top: 15%;
+    transform: translate(-5%, -5%);
+    background: rgb(187, 255, 0);
+    border-radius: 10px;
+    position: absolute;
+  }
+  
+  .right-button {
+    margin-left: 10px;
+    /* background-image: url("images/vietnam.png"); */
+    right: 5%;
+    top: calc(5% + -300px); /* Lên top 50px từ phía trên */
+    transform: translate(5%, -5%);
+    background: none;
+    position: absolute;
+  }
+  
+  .image-container img.slide-left {
+    transform: translateX(-100%);
+  }
+  
+  .image-container img.slide-right {
+    transform: translateX(100%);
+  }
+  
+  button:focus {
+    outline: none !important;
+  }
