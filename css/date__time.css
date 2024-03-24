@@ -1,0 +1,42 @@
+.time-info {
+    text-align: center;
+    position: absolute;
+    margin-left: 450px;
+    color: rgb(255, 255, 255);
+    margin-top:5px;
+    /* border: 3px solid red;
+    border-radius: 20px; */
+  }
+  
+  #current-day {
+    font-size: 24px;
+  }
+  
+  #current-date, #current-time {
+    font-size: 18px;
+    font-weight: bold;
+    padding-left:20px;
+    padding-right:40px;
+    line-height: 70px;
+  
+  }
+  .border__time{
+    border: 3px dashed rgb(255, 255, 255);
+    border-radius: 20px;
+    width:380px;
+    height:60px;
+    margin-top:-75px;
+    margin-left:-20px;
+
+    background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet, red);
+  background-size: 1400% 100%;
+  animation: gradientAnimation 10s linear infinite;
+  }
+  @keyframes gradientAnimation {
+    0% {
+      background-position: 0% 50%;
+    }
+    100% {
+      background-position: 100% 50%;
+    }
+  }

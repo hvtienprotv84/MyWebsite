@@ -5,7 +5,37 @@
     margin-top:40px;
     margin-left: auto;
     margin-right: auto;
+
+    animation: borderAnimation 5s linear infinite;
+    background-size: 1400% 100%;
 }
+@keyframes borderAnimation {
+  0% {
+    border-color: red;
+  }
+  14% {
+    border-color: orange;
+  }
+  29% {
+    border-color: yellow;
+  }
+  43% {
+    border-color: green;
+  }
+  57% {
+    border-color: blue;
+  }
+  71% {
+    border-color: indigo;
+  }
+  86% {
+    border-color: violet;
+  }
+  100% {
+    border-color: red;
+  }
+}
+
 
 .myskill__ide__container {
     padding: 20px;
@@ -42,7 +72,7 @@
   
   .image__border__myskill__ide {
     position: absolute;
-    top:2080px;
+    top:2120px;
     left: 50%;
     transform: translateX(-50%);
     display: flex;

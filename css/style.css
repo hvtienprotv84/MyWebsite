@@ -72,6 +72,7 @@ nav ul img{
 
   width:100px;
   height:70px;
+
   /* padding-left:35px; */
   /* margin-left:20px; */
 }
@@ -82,7 +83,13 @@ nav ul li button{
   font-weight: bold;
   font-size:18px;
   margin-left:25px;
+  outline: none;
+  cursor: pointer;
 }
+nav ul li button:focus {
+  outline: none;
+}
+
 nav ul li button .line {
   border: none;
   border-top: 1px solid rgb(238, 255, 0);
@@ -240,6 +247,7 @@ p{
   box-shadow: #33ffff;
   margin: 0 auto;
 }
+
 #myBtn {
   display: none;
   position: fixed;
@@ -249,16 +257,43 @@ p{
   font-size: 18px;
   border: none;
   outline: none;
-  /* background-color: red; */
+  background-color: rgba(255, 0, 0, 0);
   /* color: white; */
   cursor: pointer;
   /* padding: 15px; */
   border-radius: 20px;
-  background-image: url("../images/ontop.png");
-  width:60px;
-  height:60px;
+  background-image: url("../images/on_top2.gif");
+  width:52px;
+  height:52px;
   background-position: center center;
-
+  border: 3px dashed red;
+  animation: borderAnimation 5s linear infinite;
+}
+@keyframes borderAnimation {
+  0% {
+    border-color: red;
+  }
+  14% {
+    border-color: orange;
+  }
+  29% {
+    border-color: yellow;
+  }
+  43% {
+    border-color: green;
+  }
+  57% {
+    border-color: blue;
+  }
+  71% {
+    border-color: indigo;
+  }
+  86% {
+    border-color: violet;
+  }
+  100% {
+    border-color: red;
+  }
 }
 
 .introduction__content{
@@ -273,20 +308,41 @@ p{
   white-space: nowrap;
   overflow: hidden;
   animation: marquee 50s linear infinite;
-  font-size:30px;
+  font-size: 26px;
   max-width: 680px;
+  font-family: 'Itim', cursive;
+  padding:10px;
+  padding-top:10px;
+  background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet, red);
+  background-size: 1400% 100%;
+  animation: marquee 10s linear infinite;
 }
 @keyframes marquee {
-  0% { transform: translateX(100%); }
-  100% { transform: translateX(-100%); }
+  0% { transform: translateX(-50%); }
+  100% { transform: translateX(50%); }
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
 }
 
-.background_lienhe{
+
+/* .background_lienhe{
   background: red;
   width: 100px;
   height: 100px;
-}
+} */
 
-.hello{
-  color:red;
+        .red-link {
+            /* color: rgb(0, 191, 255); */
+            font-size:15.5px;
+            font-family: 'Poppins', sans-serif;
+
+        }
+
+.content__CV{
+  font-size:16px;
+  font-family: 'Poppins', sans-serif;
 }

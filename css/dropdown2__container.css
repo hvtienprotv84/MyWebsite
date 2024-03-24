@@ -1,5 +1,5 @@
 /* Style The Dropdown Button */
-.dropbtn {
+.dropbtn2 {
     color: white;
     padding: 5px;
     font-size: 16px;
@@ -11,26 +11,30 @@
     height: 80px;
     background-color: #f9f9f900;
   }
-  .dropbtn img{
+  .dropbtn2 img{
     width: 200px !important;
     height: 120px !important;
     margin-top:-50px;
     margin-left: -60px; 
-    background: none;
-    outline: none;
-    border: none;
-    cursor: pointer;
+  }
+  .dropdown-content22 img{
+    width:50px;
+    height: 50px;
   }
  /* The container <div> - needed to position the dropdown content */
-.dropdown2 {
-    position: relative;
+.dropdown2_container {
     display: inline-block;
     border-radius: 50px;
     z-index: 2; /* Đặt giá trị z-index thành 2 */
+    position: fixed;
+    top:0;
+    left: 0;
+    margin-left:20px;
+    margin-top:620px;
   }
   
   /* Dropdown Content (Hidden by Default) */
-  .dropdown-content2 {
+  .dropdown-content22 {
     display: none;
     position: absolute;
     background-color: #f9f9f9;
@@ -39,11 +43,14 @@
     z-index: 3; /* Đặt giá trị z-index thành 3 */
     border: 2px solid #465cf3;
     left:32px;
-    top:200px;
+    top:50px;
+    margin-top:-370px;
+    margin-left:-10px;
+    border-radius:10px;
   }
   
   /* Links inside the dropdown */
-  .dropdown-content2 a {
+  .dropdown-content22 a {
     color: black;
     padding: 12px 16px;
     text-decoration: none;
@@ -52,10 +59,10 @@
   }
   
   /* Change color of dropdown links on hover */
-  .dropdown-content2 a:hover {background-color: #ffbb00}
+  .dropdown-content22 a:hover {background-color: #ffbb00}
   
   /* Show the dropdown menu on hover */
-  .dropdown2:hover .dropdown-content2 {
+  .dropdown2_container:hover .dropdown-content22 {
     display: block;
   }
   

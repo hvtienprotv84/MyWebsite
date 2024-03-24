@@ -23,6 +23,10 @@
   <link rel="stylesheet" href="./css/slide__image.css">
   <link rel="stylesheet" href="./css/dropdown__doan.css">
   <link rel="stylesheet" href="./css/date__time.css">
+  <link rel="stylesheet" href="./css/content__project.css">
+  <link rel="stylesheet" href="./css/slide__image__project.css">
+  <link rel="stylesheet" href="./css/swiper__slide.css">
+  <link rel="stylesheet" href="./css/dropdown__slide__image.css">
 
   <link rel="stylesheet" href="file:///E:/fontawesome/css/all.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -30,6 +34,10 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
   <link rel="stylesheet" href="https://themify.me/wp-content/themes/themify-v32/themify-icons/themify-icons.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+  
 </head>
 
 <body>
@@ -62,7 +70,7 @@
       <li>
         <a href="index.html" data-lang="vi" data-lang-en="Home" data-lang-vi="Nhà" data-lang-de="heim" data-lang-kr="집"
           data-lang-jp="家">
-          Home
+          Nhà
         </a>
       </li>
       <li>
@@ -70,8 +78,8 @@
         <a href="#">CV</a>
         <input type="checkbox" id="btn-1">
         <ul>
-          <li><a href="#" class="content__CV">Bản Tiếng Anh</a></li>
-          <li><a href="#" class="content__CV">Bản Tiếng Việt</a></li>
+          <li><a href="CV_EN.html" class="content__CV">Bản Tiếng Anh</a></li>
+          <li><a href="CV_VN.html" class="content__CV">Bản Tiếng Việt</a></li>
           <!-- <li><a href="#">Icons</a></li> -->
           <!-- <button id="vietnameseButton"><img src="https://o.rada.vn/data/image/2021/08/24/la-co-15.svg" alt="Mô tả hình ảnh">Tiếng Việt</button>
         <button id="englishButton"><img src="https://o.rada.vn/data/image/2021/08/24/la-co-37.svg" alt="Mô tả hình ảnh">Tiếng Anh</button>
@@ -156,8 +164,6 @@
   </h1> -->
 
   
-    
-    
 
   <!-- <img class="image__content" src="https://res.cloudinary.com/cloudinary-marketing/images/v1649720751/Web_Assets/blog/Mario_1/Mario_1-gif?_i=AA" alt="Mô tả hình ảnh"> -->
   <button onclick="topFunction()" id="myBtn" title="Lên trang đầu"></button>
@@ -170,47 +176,231 @@
   data-lang-jp="お支払いガイド">
   INTRODUCTION
 </h1> -->
+ 
+<div class="content__project">Đồ Án Môn Học</div>
 
-  <!-- <div class="button-container">
-    <button class="left-button" onclick="previousImage()"><img src="./images/muitien_trai.gif"
-        alt="Mô tả hình ảnh"></button>
-    <button class="right-button" onclick="nextImage()"><img src="./images/muitien_phai.gif"
-        alt="Mô tả hình ảnh"></button>
-  </div> -->
-
-
-
-  <!-- ĐOẠN CODE TẠO MENU BUTTON GIÚP LÀM GỌN 4 BUTTON TRONG 1 MENU-->
-  <div style="top: 0;left: 0;position: fixed;margin-left:20px;margin-top:620px" class="dropdown2">
-    <div class="dropbtn">
-      <img style="width:60px;height:60px;border-radius:50px"
-        src="./images/dropdown_contact3.gif">
+<div class="swiper mySwiper">
+  <div class="swiper-wrapper">
+    <div class="swiper-slide">
+      <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
     </div>
+    <div class="swiper-slide">
+      <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
+    </div>
+    <div class="swiper-slide">
+      <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
+    </div>
+    <div class="swiper-slide">
+      <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
+    </div>
+    <div class="swiper-slide">
+      <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
+    </div>
+    <div class="swiper-slide">
+      <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
+    </div>
+    <div class="swiper-slide">
+      <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
+    </div>
+  </div>
+  <div class="swiper-button-next"></div>
+  <div class="swiper-button-prev"></div>
+  <div class="swiper-pagination"></div>
+</div>
+
+
+
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+
+<label class="dropdown2">
+  <div class="dd-button">
+    1. Website bán điện thoại
+  </div>
+
+  <input type="checkbox" class="dd-input" id="test">
+
+  <ul class="dd-menu">
+    <li><img src="https://o.rada.vn/data/image/2021/08/24/la-co-15.svg" alt="Mô tả hình ảnh"> Action</li>
+    <li>Another action</li>
+    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam maiores qui iste quas reiciendis, <br> mollitia magni quisquam voluptate sequi veniam quae est dolore asperiores! Alias omnis minima ex iste quasi?</li>
+    <li class="divider"></li>
+    <li>
+      <a href="http://rane.io"><img src="./images/github_logo.png" alt="Mô tả hình ảnh">Link to Rane.io</a>
+    </li>
+  </ul>
+</label>
+
+
+<div class="swiper mySwiper">
+  <div class="swiper-wrapper">
+    <div class="swiper-slide">
+      <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
+    </div>
+    <div class="swiper-slide">
+      <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
+    </div>
+    <div class="swiper-slide">
+      <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
+    </div>
+    <div class="swiper-slide">
+      <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
+    </div>
+    <div class="swiper-slide">
+      <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
+    </div>
+    <div class="swiper-slide">
+      <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
+    </div>
+    <div class="swiper-slide">
+      <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
+    </div>
+  </div>
+  <div class="swiper-button-next"></div>
+  <div class="swiper-button-prev"></div>
+  <div class="swiper-pagination"></div>
+</div>
+
+<label class="dropdown2">
+  <div class="dd-button">
+    Website bán điện thoại
+  </div>
+
+  <input type="checkbox" class="dd-input" id="test">
+
+  <ul class="dd-menu">
+    <li><img src="https://o.rada.vn/data/image/2021/08/24/la-co-15.svg" alt="Mô tả hình ảnh"> Action</li>
+    <li>Another action</li>
+    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam maiores qui iste quas reiciendis, <br> mollitia magni quisquam voluptate sequi veniam quae est dolore asperiores! Alias omnis minima ex iste quasi?</li>
+    <li class="divider"></li>
+    <li>
+      <a2 href="http://rane.io">Link to Rane.io</a2>
+    </li>
+  </ul>
+</label>
+
+
+
+
+
+
+
+
+
+
+
+<!-- 
+
+<div class="w3-container">
+  <div class="w3-dropdown-click">
+    <button onclick="myFunction()" class="w3-button w3-black">Vào Đây</button>
+    <div id="Demo" class="w3-dropdown-content w3-bar-block w3-card-4 w3-animate-zoom">
+      <a href="#" class="w3-bar-item w3-button">Link 1</a>
+      <a href="#" class="w3-bar-item w3-button">Link 2</a>
+      <a href="#" class="w3-bar-item w3-button">Link 3</a>
+    </div>
+  </div>
+</div>
+
+<style>
+  .w3-container {
+    position: relative;
+    display: inline-block;
+  }
+
+  
+  .w3-dropdown-click .w3-black {
+    color: aqua !important;;
+  }
+  .w3-dropdown-click .w3-button {
+    background-color: #22ff00;
+    color: red !important; /* Thay đổi màu chữ thành đỏ */
+    border: none;
+    cursor: pointer;
+    padding: 8px 16px;
+    font-size: 16px;
+    font-weight: bold;
+  }
+
+  .w3-dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+
+  .w3-dropdown-content a {
+    color: #333;
+    padding: 8px 16px;
+    text-decoration: none;
+    display: block;
+  }
+
+  .w3-dropdown-content a:hover {
+    background-color: #ddd;
+  }
+
+  .w3-show {
+    display: block;
+  }
+</style>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("Demo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+</script>
+
+ -->
+
+
+
+
+
+
+
+
+
+
+  <!--ĐOẠN CODE TẠO MENU BUTTON GIÚP LÀM GỌN 4 BUTTON TRONG 1 MENU-->
+  <div style="top: 0;left: 0;position: fixed;margin-left:20px;margin-top:620px" class="dropdown2">
+    <button class="dropbtn">
+      <img src="./images/dropdown_contact3.gif">
+    </button>
     <div style="margin-top:-370px;margin-left:-10px;border-radius:50px;" class="dropdown-content2">
-      <a href="/diachichinhanhggmap"><img style="width:50px;height:50px;" src="./images/vietnam.png"
+      <a href="/diachichinhanhggmap"><img style="width:50px;height:50px;border-radius:50px" src="img/diachi_menu.gif"
           title="Địa Chỉ Cửa Hàng"></a>
-      <a href="tel:0939 266 625"><img style="width:50px;height:50px;border-radius:5px" src="./images/vietnam.png"
+      <a href="tel:0939 266 625"><img style="width:50px;height:50px;border-radius:5px" src="img/phone_menu.png"
           title="SĐT: 093 110 3224"></a>
-      <a href="https://zalo.me/0931103224"><img style="width:50px;height:50px"
-          src="./images/vietnam.png" title="https://zalo.me/0931103224"></a>
+      <a href="https://zalo.me/0931103224"><img style="width:50px;height:50px;border-radius:50px"
+          src="img/logo_zalo.png" title="https://zalo.me/0931103224"></a>
       <a id="popup-button" onclick="showPopup()">
-        <img style="width:50px;height:50px;border-radius:5px" src="./images/vietnam.png" title="Gửi Email">
+        <img style="width:50px;height:50px;border-radius:5px" src="img/email_menu3.gif" title="Gửi Email">
       </a>
     </div>
   </div>
-  <!--ĐOẠN CODE TẠO MENU BUTTON GIÚP LÀM GỌN 4 BUTTON TRONG 1 MENU -->
+  <!--ĐOẠN CODE TẠO MENU BUTTON GIÚP LÀM GỌN 4 BUTTON TRONG 1 MENU-->
 
 
   <div id="dropdownContainer" class="hidden">
     <div id="dropdown" class="dropdown">
       <div class="custom-toggle">
-        <h1>2<img src="https://cdn.iconscout.com/icon/free/png-256/free-menu-176-433842.png" alt="Options">Nhấp vào đây</h1>
+        <h1><img src="https://cdn.iconscout.com/icon/free/png-256/free-menu-176-433842.png" alt="Options">Nhấp vào đây</h1>
       </div>
       <div class="dropdown-options">
         <ul>
           <li class="option">A</li>
           <li class="option">B</li>
           <li class="option">C</li>
+          <li class="option">D</li>
         </ul>
       </div>
     </div>
@@ -231,7 +421,7 @@
       padding: 10px;
       border: 1px solid black;
       z-index: 999;
-      width: 1000px;
+      width: 600px;
       height: 100px;
       opacity: 0;
       animation: fadeIn 0.3s ease forwards;
@@ -261,7 +451,7 @@
       margin-right: 5px;
       width:50px;
       height:50px;
-      margin-left:400px;
+      margin-left:200px;
     }
   
     .dropdown-options {
@@ -284,7 +474,7 @@
 
 .option:hover {
   background-color: lightgray;
-  border-radius: 20px;
+  border-radius: 5px;
 }
   </style>
   
@@ -320,7 +510,7 @@ options.forEach(function(option) {
     optionVisible = false;
   });
 });
-  </script>
+</script>
 
 
 
@@ -381,8 +571,6 @@ options.forEach(function(option) {
                 <a href="#" class="fab fa-instagram"></a>
                 <a href="#" class="fab fa-linkedin"></a>
                 <a href="#" class="fab fa-pinterest"></a>
-                
-                <a href="#" class="fab fa-github"></a>
               </div>
             </div>
           </div>
@@ -418,4 +606,8 @@ options.forEach(function(option) {
 <script src="./js/ontop.js"></script>
 <script src="./js/dropdown__doan.js"></script>
 <script src="./js/date__time.js"></script>
+<script src="./js/slide__image__project.js"></script>
+<script src="./js/swiper__slide.js"></script>
+
+
 </html>

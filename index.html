@@ -21,6 +21,8 @@
   <link rel="stylesheet" href="./css/content__skill__studied.css">
   <link rel="stylesheet" href="./css/dropdown.css">
   <link rel="stylesheet" href="./css/slide__image.css">
+  <link rel="stylesheet" href="./css/dropdown__doan.css">
+  <link rel="stylesheet" href="./css/date__time.css">
 
   <link rel="stylesheet" href="file:///E:/fontawesome/css/all.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -48,72 +50,7 @@
       <h2 id="current-time"></h2>
       <div class="border__time"></div>
     </div>
-  <style>
-   .time-info {
-  text-align: center;
-  position: absolute;
-  margin-left: 500px;
-  color: rgb(255, 255, 255);
-  margin-top:5px;
-  /* border: 3px solid red;
-  border-radius: 20px; */
-}
-
-#current-day {
-  font-size: 24px;
-}
-
-#current-date, #current-time {
-  font-size: 18px;
-  font-weight: bold;
-  padding-left:40px;
-  padding-right:40px;
-  line-height: 70px;
-
-}
-.border__time{
-  border: 3px dashed rgb(255, 255, 255);
-  border-radius: 20px;
-  width:370px;
-  height:60px;
-  margin-top:-75px;
-  margin-left:15px;
-}
-</style>
-<script>
-  window.addEventListener('DOMContentLoaded', function() {
-    var daysOfWeek = ['Chủ nhật', 'Thứ hai', 'Thứ ba', 'Webnesday', 'Thứ năm', 'Thứ sáu', 'Thứ bảy'];
-    var monthsOfYear = ['Tháng 01', 'Tháng 02', 'March', 'Tháng 04', 'Tháng 05', 'Tháng 06', 'Tháng 07', 'Tháng 08', 'Tháng 09', 'Tháng 10', 'Tháng 11', 'Tháng 12'];
-  
-    function formatDate(date) {
-      var day = daysOfWeek[date.getDay()];
-      var dateNumber = date.getDate();
-      var month = monthsOfYear[date.getMonth()];
-      var year = date.getFullYear();
-  
-      return day + ', ' + month + ' ' + dateNumber + ', ' + year;
-    }
-  
-    function formatTime(date) {
-      var hours = date.getHours();
-      var minutes = date.getMinutes();
-      var seconds = date.getSeconds();
-  
-      return hours + ':' + (minutes < 10 ? '0' + minutes : minutes) + ':' + (seconds < 10 ? '0' + seconds : seconds);
-    }
-  
-    function updateTimeInfo() {
-      var currentDate = new Date();
-      var currentDateStr = formatDate(currentDate);
-      var currentTimeStr = formatTime(currentDate);
-  
-      document.getElementById('current-date').textContent = currentDateStr + ' ' + currentTimeStr;
-    }
-  
-    updateTimeInfo();
-    setInterval(updateTimeInfo, 1000); // Cập nhật thông tin thời gian mỗi giây
-  });
-  </script>
+    
 
 
     <label for="btn" class="icon">
@@ -123,19 +60,19 @@
     <ul>
       <!-- <li><a href="/">Home</a></li> -->
       <li>
-        <a href="index.html" data-lang="vi" data-lang-en="PAYMENT GUIDE" data-lang-vi="Nhà" data-lang-de="ZAHLUNGSANLEITUNG"
-          data-lang-kr="결제 가이드" data-lang-jp="お支払いガイド">
+        <a href="index.html" data-lang="vi" data-lang-en="Home" data-lang-vi="Nhà" data-lang-de="heim" data-lang-kr="집"
+          data-lang-jp="家">
           Home
         </a>
       </li>
       <li>
         <label for="btn-1" class="show">Features +</label>
-        <a href="#">CV</a>
+        <a href="List_CV.html">CV</a>
         <input type="checkbox" id="btn-1">
         <ul>
-          <li><a href="#">Pages</a></li>
-          <li><a href="#">Elements</a></li>
-          <li><a href="#">Icons</a></li>
+          <li><a href="CV_EN.html" class="content__CV">Bản Tiếng Anh</a></li>
+          <li><a href="CV_VN.html" class="content__CV">Bản Tiếng Việt</a></li>
+          <!-- <li><a href="#">Icons</a></li> -->
           <!-- <button id="vietnameseButton"><img src="https://o.rada.vn/data/image/2021/08/24/la-co-15.svg" alt="Mô tả hình ảnh">Tiếng Việt</button>
         <button id="englishButton"><img src="https://o.rada.vn/data/image/2021/08/24/la-co-37.svg" alt="Mô tả hình ảnh">Tiếng Anh</button>
         <button id="germanButton"><img src="https://o.rada.vn/data/image/2021/08/24/la-co-337.svg" alt="Mô tả hình ảnh">Tiếng Đức</button>
@@ -163,7 +100,18 @@
           </ul>
         </li> -->
 
-      <li><a href="#">Về Tôi</a></li>
+      <!-- <li><a href="List_Project.html">Projects</a></li> -->
+      <li>
+        <label for="btn-1" class="show">Features +</label>
+        <a href="List_Project.html">Dự Án</a>
+        <input type="checkbox" id="btn-1">
+        <ul>
+          <li><a href="My_Projects.html" class="red-link">Dự Án Cá Nhân</a></li>
+                <li><a href="My_Projects_School.html" class="red-link">Đồ Án Môn Học</a></li>
+        </ul>
+      </li>
+      
+      <li><a href="about_me.html">Về Tôi</a></li>
       <li><a href="lienhe.html">Liên Hệ</a></li>
       <!-- <li><a href="#">Contact</a></li> -->
       <!-- <button id="vietnameseButton"><img src="https://o.rada.vn/data/image/2021/08/24/la-co-15.svg" alt="Mô tả hình ảnh">Tiếng Việt</button>
@@ -202,10 +150,92 @@
         $('span').toggleClass("cancel");
       });
     </script> -->
-  <h1 class="welcome" data-lang="vi" data-lang-en="PAYMENT GUIDE" data-lang-vi="HƯỚNG DẪN THANH TOÁN2"
+  <!-- <h1 class="welcome" data-lang="vi" data-lang-en="PAYMENT GUIDE" data-lang-vi="HƯỚNG DẪN THANH TOÁN2"
     data-lang-de="ZAHLUNGSANLEITUNG" data-lang-kr="결제 가이드" data-lang-jp="お支払いガイド">
-    <span>Chào Mừng Bạn Đã Đến Với Website của Tiến</span>
-  </h1>
+    <span>CHÀO MỪNG BẠN ĐÃ ĐẾN VỚI WEBSITE CỦA TIẾN</span>
+  </h1> -->
+
+  <style>
+    .marquee {
+     height: 50px;	
+     overflow: hidden;
+     position: relative;
+     /* background: yellow; */
+     color: orange;
+     /* border: 2px dashed orange; */
+     
+    }
+    .marquee p {
+     position: absolute;
+     width: 100%;
+     height: 100%;
+     margin: 0;
+     line-height: 50px;
+     font-weight: bold;
+     text-align: center;
+     color:red;
+     /* Starting position */
+     -moz-transform:translateX(100%);
+     -webkit-transform:translateX(100%);	
+     transform:translateX(100%);
+     /* Apply animation to this element */	
+     -moz-animation: scroll-left 20s linear infinite;
+     -webkit-animation: scroll-left 20s linear infinite;
+     animation: scroll-left 20s linear infinite;
+     margin-top:5px;
+    }
+    .marquee span{
+      animation: color-change 5s infinite;
+    }
+    @keyframes color-change {
+  0% {
+    color: rgb(0, 13, 255);
+  }
+  25% {
+    color: rgb(0, 255, 0);
+  }
+  50% {
+    color: rgb(0, 213, 255);
+  }
+  75% {
+    color: rgb(255, 170, 0);
+  }
+  100% {
+    color: rgb(162, 0, 255);
+  }
+}
+    /* Move it (define the animation) */
+    @-moz-keyframes scroll-left {
+     0%   { -moz-transform: translateX(100%); }
+     100% { -moz-transform: translateX(-100%); }
+    }
+    @-webkit-keyframes scroll-left {
+     0%   { -webkit-transform: translateX(100%); }
+     100% { -webkit-transform: translateX(-100%); }
+    }
+    @keyframes scroll-left {
+     0%   { 
+     -moz-transform: translateX(100%); /* Browser bug fix */
+     -webkit-transform: translateX(100%); /* Browser bug fix */
+     transform: translateX(100%); 		
+     }
+     100% { 
+     -moz-transform: translateX(-100%); /* Browser bug fix */
+     -webkit-transform: translateX(-100%); /* Browser bug fix */
+     transform: translateX(-100%); 
+     }
+    }
+    @keyframes rainbowAnimation {
+  0% { background-position: 0% 50%; }
+  100% { background-position: 100% 50%; }
+}
+    </style>
+    
+    <div class="marquee">
+    <p>CHÀO MỪNG BẠN ĐÃ ĐẾN VỚI WEBSITE CỦA <span>HUỲNH VĨNH TIẾN</span></p>
+    </div>
+    
+
   <!-- <img class="image__content" src="https://res.cloudinary.com/cloudinary-marketing/images/v1649720751/Web_Assets/blog/Mario_1/Mario_1-gif?_i=AA" alt="Mô tả hình ảnh"> -->
   <button onclick="topFunction()" id="myBtn" title="Lên trang đầu"></button>
   <!-- <h1 class="introduction__content" 
@@ -221,13 +251,18 @@
     <img class="image__content" id="myImage"
       src="https://res.cloudinary.com/cloudinary-marketing/images/v1649720751/Web_Assets/blog/Mario_1/Mario_1-gif?_i=AA"
       alt="Mô tả hình ảnh">
-  </div>
-  <div class="button-container">
-    <button class="left-button" onclick="previousImage()"><img src="./images/muitien_trai.gif"
+      <button class="left-button" onclick="previousImage()"><img src="./images/muitien_trai.gif"
         alt="Mô tả hình ảnh"></button>
     <button class="right-button" onclick="nextImage()"><img src="./images/muitien_phai.gif"
         alt="Mô tả hình ảnh"></button>
   </div>
+
+  <!-- <div class="button-container">
+    <button class="left-button" onclick="previousImage()"><img src="./images/muitien_trai.gif"
+        alt="Mô tả hình ảnh"></button>
+    <button class="right-button" onclick="nextImage()"><img src="./images/muitien_phai.gif"
+        alt="Mô tả hình ảnh"></button>
+  </div> -->
 
   <div class="border__content__skill"></div>
   <div class="content__skill">
@@ -302,25 +337,147 @@
   </div>
 
 
-  <!--ĐOẠN CODE TẠO MENU BUTTON GIÚP LÀM GỌN 4 BUTTON TRONG 1 MENU-->
+  <!-- ĐOẠN CODE TẠO MENU BUTTON GIÚP LÀM GỌN 4 BUTTON TRONG 1 MENU-->
   <div style="top: 0;left: 0;position: fixed;margin-left:20px;margin-top:620px" class="dropdown2">
-    <button class="dropbtn">
+    <div class="dropbtn">
       <img style="width:60px;height:60px;border-radius:50px"
-        src="https://w7.pngwing.com/pngs/68/239/png-transparent-number-computer-icons-plus-miscellaneous-game-plus.png">
-    </button>
+        src="./images/dropdown_contact3.gif">
+    </div>
     <div style="margin-top:-370px;margin-left:-10px;border-radius:50px;" class="dropdown-content2">
-      <a href="/diachichinhanhggmap"><img style="width:50px;height:50px;border-radius:50px" src="img/diachi_menu.gif"
-          title="Địa Chỉ Cửa Hàng"></a>
-      <a href="tel:0939 266 625"><img style="width:50px;height:50px;border-radius:5px" src="img/phone_menu.png"
+      <!-- <a href="/diachichinhanhggmap"><img style="width:50px;height:50px;" src="./images/icon_zalo2.png"
+          title="Địa Chỉ Cửa Hàng"></a> -->
+      <a href="tel:0939 266 625"><img style="width:50px;height:50px;border-radius:5px" src="./images/phone_menu.png"
           title="SĐT: 093 110 3224"></a>
-      <a href="https://zalo.me/0931103224"><img style="width:50px;height:50px;border-radius:50px"
-          src="img/logo_zalo.png" title="https://zalo.me/0931103224"></a>
-      <a id="popup-button" onclick="showPopup()">
-        <img style="width:50px;height:50px;border-radius:5px" src="img/email_menu3.gif" title="Gửi Email">
-      </a>
+      <a href="https://zalo.me/0931103224"><img style="width:50px;height:50px"
+          src="./images/icon_zalo2.png" title="https://zalo.me/0931103224"></a>
+      <!-- <a id="popup-button" onclick="showPopup()">
+        <img style="width:50px;height:50px;border-radius:5px" src="./images/vietnam.png" title="Gửi Email">
+      </a> -->
     </div>
   </div>
-  <!--ĐOẠN CODE TẠO MENU BUTTON GIÚP LÀM GỌN 4 BUTTON TRONG 1 MENU-->
+  <!--ĐOẠN CODE TẠO MENU BUTTON GIÚP LÀM GỌN 4 BUTTON TRONG 1 MENU -->
+
+
+  <div id="dropdownContainer" class="hidden">
+    <div id="dropdown" class="dropdown">
+      <div class="custom-toggle">
+        <h1>2<img src="https://cdn.iconscout.com/icon/free/png-256/free-menu-176-433842.png" alt="Options">Nhấp vào đây</h1>
+      </div>
+      <div class="dropdown-options">
+        <ul>
+          <li class="option">A</li>
+          <li class="option">B</li>
+          <li class="option">C</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div id="redBackground"></div>
+  
+  <style>
+    .hidden {
+      display: none;
+    }
+  
+    .dropdown {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: rgb(255, 0, 0);
+      padding: 10px;
+      border: 1px solid black;
+      z-index: 999;
+      width: 1000px;
+      height: 100px;
+      opacity: 0;
+      animation: fadeIn 0.3s ease forwards;
+      margin-top:305px;
+      border-radius: 20px;
+    }
+  
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+        transform: translate(-50%, -50%) scale(0.8);
+      }
+      100% {
+        opacity: 1;
+        transform: translate(-50%, -50%) scale(1);
+      }
+    }
+  
+    .custom-toggle {
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      transition: opacity 0.3s ease;
+    }
+  
+    .custom-toggle img {
+      margin-right: 5px;
+      width:50px;
+      height:50px;
+      margin-left:400px;
+    }
+  
+    .dropdown-options {
+  display: none;
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  margin-top: 10px;
+  border: 2px solid red;
+  border-radius: 20px;
+  width: 200px;
+  padding: 10px;
+}
+
+.option {
+  padding: 5px;
+  cursor: pointer;
+  list-style: none; /* Loại bỏ dấu đầu dòng */
+}
+
+.option:hover {
+  background-color: lightgray;
+  border-radius: 20px;
+}
+  </style>
+  
+  <script>
+    var customToggle = document.querySelector('.custom-toggle');
+var dropdownOptions = document.querySelector('.dropdown-options');
+var optionVisible = false; // Biến đánh dấu trạng thái hiển thị của dropdown options
+
+customToggle.addEventListener('click', function() {
+  if (!optionVisible) {
+    dropdownOptions.style.display = 'block';
+    optionVisible = true;
+  } else {
+    dropdownOptions.style.display = 'none';
+    optionVisible = false;
+  }
+});
+
+var options = document.querySelectorAll('.option');
+
+options.forEach(function(option) {
+  option.addEventListener('mouseover', function() {
+    option.classList.add('hovered');
+  });
+
+  option.addEventListener('mouseout', function() {
+    option.classList.remove('hovered');
+  });
+
+  option.addEventListener('click', function() {
+    console.log('Selected option:', option.textContent);
+    dropdownOptions.style.display = 'none';
+    optionVisible = false;
+  });
+});
+  </script>
 
 
 
@@ -332,25 +489,79 @@
           <div class="col-lg-3 col-md-6">
             <div class="f_widget company_widget wow fadeInLeft" data-wow-delay="0.2s"
               style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInLeft;">
-              <h3 class="f-title f_600 t_color f_size_18">Get in Touch</h3>
-              <p>Don’t miss any updates of our new templates and extensions.!</p>
-              <form action="#" class="f_subscribe_two mailchimp" method="post" novalidate="true" _lpchecked="1">
+              <h3 class="f-title f_600 t_color f_size_18">Gửi Email cho tớ</h3>
+              <p>Nếu bạn có việc cần liên hệ <br> hãy gửi email cho tôi <br> Đừng sợ phiền nhé :))</p>
+              <div class="f_subscribe_two mailchimp">
                 <input type="text" name="EMAIL" class="form-control memail" placeholder="Email">
-                <button class="btn btn_get btn_get_two" type="submit">Subscribe</button>
-                <p class="mchimp-errmessage" style="display: none;"></p>
-                <p class="mchimp-sucmessage" style="display: none;"></p>
-              </form>
+                <button class="btn btn_get btn_get_two" type="button" onclick="showNotification()">Subscribe</button>
+              </div>
+
+              <div class="container__notification">
+              <div id="notification" class="notification">
+                <button class="notification-close" onclick="closeNotification()">X</button>
+                <span class="notification-message">Xin lỗi bạn! đây chỉ giao diện của Frontend chưa có Backend!<br><hr> Liên hệ với mình qua Email: huynhvinhtien.84@gmail.com<br><img class="image__email" src="./images/thanks_1.png"></span>
+              </div>
+            </div>
+
+
+              <p class="mchimp-errmessage" style="display: none;"></p>
+              <p class="mchimp-sucmessage" style="display: none;"></p>
             </div>
           </div>
+
+          <style>
+            .image__email{
+             
+            }
+            .notification {
+              display: none;
+              position: fixed;
+              top: 10px;
+              right: 10px;
+              padding: 10px;
+              background-color: #f1f1f1;
+              border: 1px solid #ccc;
+              border-radius: 4px;
+              width: 250px;
+              height: 300px;
+            }
+            
+            .notification-message {
+              margin-right: 10px;
+              font-family: Whitney, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif
+
+            }
+            
+            .notification-close {
+              background: none;
+              border: none;
+              cursor: pointer;
+              margin-left: 220px;
+            }
+            </style>
+            <script>
+            function showNotification() {
+              const notification = document.getElementById('notification');
+              notification.style.display = 'block';
+            }
+            
+            function closeNotification() {
+            const notification = document.getElementById('notification');
+            notification.style.display = 'none';
+            }
+            </script>
+
+
+
           <div class="col-lg-3 col-md-6">
             <div class="f_widget about-widget pl_70 wow fadeInLeft" data-wow-delay="0.4s"
               style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInLeft;">
               <div class="hello">
-                <h3 class="f-title f_600 t_color f_size_18">Download</h3>
+                <h3 class="f-title f_600 t_color f_size_18">Thông Tin Liên Hệ</h3>
               </div>
               <ul class="list-unstyled f_list">
-                <li><a href="#">Company</a></li>
-                <li><a href="#">Android App</a></li>
+                <li><a">huynhvinhtien.84@gmail.com</a></li>
+                <li><a href="#">0931103224</a></li>
                 <li><a href="#">ios App</a></li>
                 <li><a href="#">Desktop</a></li>
                 <li><a href="#">Projects</a></li>
@@ -361,14 +572,14 @@
           <div class="col-lg-3 col-md-6">
             <div class="f_widget about-widget pl_70 wow fadeInLeft" data-wow-delay="0.6s"
               style="visibility: visible; animation-delay: 0.6s; animation-name: fadeInLeft;">
-              <h3 class="f-title f_600 t_color f_size_18">Help</h3>
+              <h3 class="f-title f_600 t_color f_size_18">Menu</h3>
               <ul class="list-unstyled f_list">
-                <li><a href="#">FAQ</a></li>
-                <li><a href="#">Term &amp; conditions</a></li>
-                <li><a href="#">Reporting</a></li>
-                <li><a href="#">Documentation</a></li>
-                <li><a href="#">Support Policy</a></li>
-                <li><a href="#">Privacy</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="CV_EN.html">CV</a></li>
+                <li><a href="My_Projects.html">Dự Án</a></li>
+                <li><a href="about_me.html">Về Tôi</a></li>
+                <li><a href="lienhe.html">Liên Hệ</a></li>
+                <!-- <li><a href="#">Privacy</a></li> -->
               </ul>
             </div>
           </div>
@@ -377,10 +588,12 @@
               style="visibility: visible; animation-delay: 0.8s; animation-name: fadeInLeft;">
               <h3 class="f-title f_600 t_color f_size_18">Mạng Xã Hội</h3>
               <div class="f_social_icon">
-                <a href="https://www.facebook.com/vinhtien.huynh.77" class="fab fa-facebook"></a>
-                <a href="#" class="fab fa-instagram"></a>
+                <a href="https://www.facebook.com/vinhtien.huynh.77" class="fab fa-facebook" title="Trang Facebook của tui"></a>
+                <a href="https://github.com/hvtienprotv84" class="fab fa-github" title="Trang Github của tui"></a>
+                <!-- <a href="#" class="fab fa-instagram"></a>
                 <a href="#" class="fab fa-linkedin"></a>
-                <a href="#" class="fab fa-pinterest"></a>
+                <a href="#" class="fab fa-pinterest"></a> -->
+                <a href="tel:0939 266 625" class="fa fa-mobile" title="SĐT: 093 110 3224"></a>
               </div>
             </div>
           </div>
@@ -414,4 +627,6 @@
 <script src="./js/slide__image.js"></script>
 <script src="./js/language.js"></script>
 <script src="./js/ontop.js"></script>
+<script src="./js/dropdown__doan.js"></script>
+<script src="./js/date__time.js"></script>
 </html>

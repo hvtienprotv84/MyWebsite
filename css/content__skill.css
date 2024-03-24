@@ -2,10 +2,40 @@
 .border__content__skill{
   width: 400px;
   border-bottom: 5px dashed rgb(0, 0, 0);
-  margin-top:40px;
+  margin-top:50px;
   margin-left: auto;
   margin-right: auto;
+
+  animation: borderAnimation 5s linear infinite;
+  background-size: 1400% 100%;
 }
+@keyframes borderAnimation {
+  0% {
+    border-color: red;
+  }
+  14% {
+    border-color: orange;
+  }
+  29% {
+    border-color: yellow;
+  }
+  43% {
+    border-color: green;
+  }
+  57% {
+    border-color: blue;
+  }
+  71% {
+    border-color: indigo;
+  }
+  86% {
+    border-color: violet;
+  }
+  100% {
+    border-color: red;
+  }
+}
+
 
 .content__skill {
     padding: 20px;
@@ -19,6 +49,7 @@
     margin-bottom: 10px;
     font-family: 'Poppins', sans-serif;
     border: 3px dashed rgb(255, 255, 255);
+    margin-top:15px;
   }
   .container__border__myskill{
     display: flex;
@@ -42,7 +73,7 @@
   
   .image__border__myskill {
     position: absolute;
-    top:800px;
+    top:840px;
     left: 50%;
     transform: translateX(-50%);
     display: flex;
@@ -63,7 +94,7 @@
 
   .image__border__myskill__2 {
     position: absolute;
-    top:1000px;
+    top:1040px;
     left: 50%;
     transform: translateX(-50%);
     display: flex;

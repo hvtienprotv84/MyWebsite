@@ -70,8 +70,8 @@
         <a href="#">CV</a>
         <input type="checkbox" id="btn-1">
         <ul>
-          <li><a href="#" class="content__CV">Bản Tiếng Anh</a></li>
-          <li><a href="#" class="content__CV">Bản Tiếng Việt</a></li>
+          <li><a href="CV_EN.html" class="content__CV">Bản Tiếng Anh</a></li>
+          <li><a href="CV_VN.html" class="content__CV">Bản Tiếng Việt</a></li>
           <!-- <li><a href="#">Icons</a></li> -->
           <!-- <button id="vietnameseButton"><img src="https://o.rada.vn/data/image/2021/08/24/la-co-15.svg" alt="Mô tả hình ảnh">Tiếng Việt</button>
         <button id="englishButton"><img src="https://o.rada.vn/data/image/2021/08/24/la-co-37.svg" alt="Mô tả hình ảnh">Tiếng Anh</button>
@@ -154,10 +154,504 @@
     data-lang-de="ZAHLUNGSANLEITUNG" data-lang-kr="결제 가이드" data-lang-jp="お支払いガイド">
     <span>CHÀO MỪNG BẠN ĐÃ ĐẾN VỚI WEBSITE CỦA TIẾN</span>
   </h1> -->
+    
+  <div class="container_hover-heading">
+    <h1 class="hover-heading">VỀ TÔI</h1>
+  </div>
+
+  <style>
+    .container_hover-heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  block-size: 100%;
+  inline-size: 100%;
+}
+
+  .hover-heading::before {  
+    transform: scaleX(0);
+    transform-origin: bottom right;
+  }
+  
+  .hover-heading:hover::before {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+  
+  .hover-heading::before {
+    content: " ";
+    display: block;
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+    inset: 0 0 0 0;
+    background: hsl(200 100% 80%);
+    z-index: -1;
+    transition: transform .3s ease;
+    background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet, red);
+    background-size: 1400% 100%;
+    animation: gradientAnimation 10s linear infinite;
+    /* width: 500px;
+    margin-left:-50px; */
+  }
+  @keyframes gradientAnimation {
+    0% {
+      background-position: 0% 50%;
+    }
+    100% {
+      background-position: 100% 50%;
+    }
+  }
+  
+  .hover-heading {
+    position: relative;
+    font-size: 5rem;
+    color:red;
+    font-family: "Roboto", sans-serif;
+    animation: color-change 5s infinite;
+  }
+  @keyframes color-change {
+0% {
+  color: rgb(0, 13, 255);
+}
+23% {
+  color: rgb(0, 255, 0);
+}
+54% {
+  color: rgb(0, 213, 255);
+}
+64% {
+  color: rgb(255, 170, 0);
+}
+80% {
+  color: rgb(162, 0, 255);
+}
+}
+
+  .content {
+    min-block-size: 100%;
+    min-inline-size: 100%;
+    margin: 0;
+    box-sizing: border-box;
+    display: grid;
+    place-content: center;
+    font-family: system-ui, sans-serif;
+  }
+  
+  @media (orientation: landscape) {
+    .content {
+      grid-auto-flow: column;
+    }
+  }
+  </style>
+
+<div class="container__dashed__hover-heading2">
+<div class="dashed__hover-heading"></div>
+</div>
+
+<style>
+  .container__dashed__hover-heading2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 300px;
+  margin: 0 auto; /* Thêm thuộc tính margin: 0 auto; để căn giữa */
+  padding-bottom: 20px;
+}
+
+.dashed__hover-heading {
+  border: 4px dashed red;
+  border-radius: 50px;
+  width: 100%; /* Thêm thuộc tính width để đảm bảo chiều dài của đường kẻ đứt */
+  animation: borderAnimation 5s linear infinite;
+  background-size: 1400% 100%;
+}
+@keyframes borderAnimation {
+  0% {
+    border-color: red;
+  }
+  14% {
+    border-color: orange;
+  }
+  29% {
+    border-color: yellow;
+  }
+  43% {
+    border-color: green;
+  }
+  57% {
+    border-color: blue;
+  }
+  71% {
+    border-color: indigo;
+  }
+  86% {
+    border-color: violet;
+  }
+  100% {
+    border-color: red;
+  }
+}
+</style>
+
+<!-- <div class="container__content__CV__EN">
+  <div class="content__CV__EN">CV VN</div>
+</div>
+  <style>
+    .container__content__CV__EN{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+    .content__CV__EN{
+      color:red;
+      font-weight: bold;
+      font-size: 36px;
+      margin-top:10px;
+    }
+  </style> -->
+
+
+
+<!-- landing page ends here -->
+<div class="container__about__me">
+<section class="about-section-container" id="about" data-aos="fade-up">
+    <div class="about-section">
+        <!-- <div class="section-heading">
+            <h2 class="section-heading-article" tabindex="0" aria-label="About me heading">
+                &#60;/AboutMe&#62;
+            </h2>
+            <p class="sectionHeadingP"></p>
+        </div> -->
+
+        <div class="border__content__about__me">
+        <div class="info-dp-section">
+            <div class="about-info">
+                <div>
+                <p class="content__about__me" tabindex="0">
+                    Xin Chào! Tên của tôi là <span>Huỳnh Vĩnh Tiến</span>. I'm a web developer and digital visual artist. I love creating things that
+                    exist on the internet. My interest in web development started in 2021 when I decided to upload my
+                    digital concept arts online.
+                </p>
+                <p class="content__about__me" tabindex="0">
+                    Instead of creating an online Concepts Art website, i started
+                    enjoying web development. Creating custom things for web taught
+                    me a lot about design & development!
+                </p>
+                <p class="content__about__me" tabindex="0">
+                    My main focus these days is building interesting & creative web
+                    designs, I like to code things from scratch, and enjoy bringing
+                    ideas to life in the browser.
+                </p>
+            </div>
+        </div>
+
+            <div class="dp" data-aos="fade-up">
+                <img style="height:300px;" src="https://media.baoquangninh.vn/dataimages/202005/original/images1384642_cau_vang_1588425776027967951308.jpg" alt="Vinod Jangid" tabindex="0" aria-label="image of vinod" />
+            </div>
+        </div>
+        </div>
+    </div>
+
+</section>
+</div>
+<!-- about section ends  -->
+
+<style>
+.border__content__about__me{
+    border: 3px dashed red;
+    padding: 10px;
+    border-radius: 20px;
+}
+.container__about__me{
+   margin-top:-700px;
+}
+
+.content__about__me{
+    font-size: 20px !important;
+    color:red;
+    font-family: Whitney, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif
+}
+
+.content__about__me span{
+    font-size: 20px !important;
+    color:red;
+    font-weight: bold;
+    font-family: Whitney, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+
+    animation: color-change 5s infinite;
+  }
+  @keyframes color-change {
+0% {
+  color: rgb(0, 13, 255);
+}
+23% {
+  color: rgb(0, 255, 0);
+}
+54% {
+  color: rgb(0, 213, 255);
+}
+64% {
+  color: rgb(255, 170, 0);
+}
+80% {
+  color: rgb(162, 0, 255);
+}
+}
+
+
+    body,
+    noscript {
+        background-color: var(--color-dark-mode)
+    }
+
+    
+
+    #backtotopbutton article,
+    :root {
+        font-family: Whitney, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif
+    }
 
   
+
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        -webkit-tap-highlight-color: transparent
+    }
+
+  
+
+    /* html {
+        font-size: 62.5%;
+        scroll-behavior: smooth;
+        text-rendering: optimizeLegibility;
+        -webkit-font-smoothing: antialiased
+    } */
+
+    :root {
+        cursor: default;
+        --color-white: #fff;
+        --color-black: #000;
+        --color-dark-mode: #11111b;
+        --color-light-mode: #ece7e1;
+        --color-ddd-color: #ddd;
+        --color-gray: #c4c4c4;
+        --color-purple: #8000ff;
+        --color-light-purple: #cf59e6;
+        --color-light-blue: #6bc5f8;
+        --color-navbarBorder-dark: #e2e2e207;
+        --color-shadowDark: rgba(0, 0, 0, 0.137);
+        --static-heading-gradient-blue: #b0f3f1;
+        --static-heading-gradient-pink: #ffcfdf;
+        --tech-stack-box-first-color: #1a1a29;
+        --tech-stack-box-second-color: rgba(0, 0, 255, 0);
+        --tech-stack-box-border-color: #292929
+    }
+
+    #hello-friend,
+    #work,
+    .about-info p,
+    .activeThistab,
+    .language-speak article {
+        color: var(--color-black)
+    }
+
+   
+
+    .dp::after,
+    .dp::before {
+        height: 300px;
+        z-index: -2;
+        content: ""
+    }
+
+
+
+   
+
+   
+
+    #info-para,
+    .about-info p {
+        font-weight: 400;
+        font-size: 2rem
+    }
+
+
+    .resume-btn {
+        margin-top: 25px;
+        justify-content: flex-start;
+        width: 45px;
+        height: 45px;
+        border: none;
+        border-radius: 50%;
+        cursor: pointer;
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, .199);
+        background: linear-gradient(82.3deg, #965de9 10.8%, #6358ee 94.3%);
+        position: relative
+    }
+
     
-    
+
+    .dp::after,
+    .dp::before,
+    .text {
+        position: absolute
+    }
+
+    .sign {
+        width: 100%;
+        justify-content: center
+    }
+
+    .sign svg {
+        width: 17px
+    }
+
+    .text {
+        right: 0;
+        width: 0%;
+        opacity: 0;
+        font-size: 1em;
+        font-weight: 600;
+        transition-duration: .3s
+    }
+
+    .resume-btn:hover {
+        width: 130px;
+        border-radius: 40px;
+        transition-duration: .3s
+    }
+
+    .resume-btn:hover .sign {
+        width: 30%;
+        transition-duration: .3s;
+        padding-left: 20px
+    }
+
+    .resume-btn:hover .text {
+        opacity: 1;
+        width: 70%;
+        transition-duration: .3s;
+        padding-right: 10px
+    }
+
+    .dp,
+    .dp::after,
+    .dp::before,
+    .dp:hover::after,
+    .dp:hover::before {
+        transition-duration: .5s
+    }
+
+    .resume-btn:active {
+        transform: translate(2px, 2px)
+    }
+
+    .about-section-container {
+        width: 100%;
+        height: fit-content;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding-top: 200px;
+    }
+
+    .about-section,
+    .projects-section-div,
+    .skills-section {
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center
+    }
+
+    .projects-heading,
+    .section-heading,
+    .skills-heading {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        gap: 10px
+    }
+
+    .dp img,
+    .dp::after,
+    .dp::before {
+        width: 300px
+    }
+
+    .projects-heading-article,
+    .section-heading-article,
+    .skills-heading-article {
+        font-size: 3rem;
+        font-family: fira code;
+        font-weight: 500;
+        background-image: linear-gradient(90deg, var(--static-heading-gradient-blue), var(--static-heading-gradient-pink));
+        background-clip: text;
+        background-color: red !important;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent
+    }
+
+    .projectsHeadingP,
+    .sectionHeadingP,
+    .skillsHeadingP {
+        width: 300px;
+        height: 1px;
+        background-image: linear-gradient(90deg, var(--static-heading-gradient-blue), var(--static-heading-gradient-pink))
+    }
+
+    .info-dp-section {
+        width: 100%;
+        display: flex;
+        margin-top: 30px
+    }
+
+    .about-info {
+        width: 60%;
+        display: flex;
+        flex-direction: column
+    }
+
+    .about-info p {
+        line-height: 25px
+    }
+
+    .dp {
+        width: 40%;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        position: relative
+    }
+
+    .dp::before {
+        box-shadow: 2px 2px 0 inset #8000ff, -2px -2px 0 inset transparent
+    }
+
+    .dp::after {
+        box-shadow: 2px 2px 0 inset transparent, -2px -2px 0 inset #8000ff
+    }
+
+    .dp:hover::after {
+        transform: translate(20px, 20px)
+    }
+
+    .dp:hover::before {
+        transform: translate(-20px, -20px)
+    }
+
+</style>
+
+
 
   <!-- <img class="image__content" src="https://res.cloudinary.com/cloudinary-marketing/images/v1649720751/Web_Assets/blog/Mario_1/Mario_1-gif?_i=AA" alt="Mô tả hình ảnh"> -->
   <button onclick="topFunction()" id="myBtn" title="Lên trang đầu"></button>
@@ -170,14 +664,6 @@
   data-lang-jp="お支払いガイド">
   INTRODUCTION
 </h1> -->
-
-  <!-- <div class="button-container">
-    <button class="left-button" onclick="previousImage()"><img src="./images/muitien_trai.gif"
-        alt="Mô tả hình ảnh"></button>
-    <button class="right-button" onclick="nextImage()"><img src="./images/muitien_phai.gif"
-        alt="Mô tả hình ảnh"></button>
-  </div> -->
-
 
 
   <!-- ĐOẠN CODE TẠO MENU BUTTON GIÚP LÀM GỌN 4 BUTTON TRONG 1 MENU-->
@@ -199,129 +685,6 @@
     </div>
   </div>
   <!--ĐOẠN CODE TẠO MENU BUTTON GIÚP LÀM GỌN 4 BUTTON TRONG 1 MENU -->
-
-
-  <div id="dropdownContainer" class="hidden">
-    <div id="dropdown" class="dropdown">
-      <div class="custom-toggle">
-        <h1>2<img src="https://cdn.iconscout.com/icon/free/png-256/free-menu-176-433842.png" alt="Options">Nhấp vào đây</h1>
-      </div>
-      <div class="dropdown-options">
-        <ul>
-          <li class="option">A</li>
-          <li class="option">B</li>
-          <li class="option">C</li>
-        </ul>
-      </div>
-    </div>
-  </div>
-  <div id="redBackground"></div>
-  
-  <style>
-    .hidden {
-      display: none;
-    }
-  
-    .dropdown {
-      position: fixed;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      background-color: rgb(255, 0, 0);
-      padding: 10px;
-      border: 1px solid black;
-      z-index: 999;
-      width: 1000px;
-      height: 100px;
-      opacity: 0;
-      animation: fadeIn 0.3s ease forwards;
-      margin-top:305px;
-      border-radius: 20px;
-    }
-  
-    @keyframes fadeIn {
-      0% {
-        opacity: 0;
-        transform: translate(-50%, -50%) scale(0.8);
-      }
-      100% {
-        opacity: 1;
-        transform: translate(-50%, -50%) scale(1);
-      }
-    }
-  
-    .custom-toggle {
-      cursor: pointer;
-      display: flex;
-      align-items: center;
-      transition: opacity 0.3s ease;
-    }
-  
-    .custom-toggle img {
-      margin-right: 5px;
-      width:50px;
-      height:50px;
-      margin-left:400px;
-    }
-  
-    .dropdown-options {
-  display: none;
-  position: absolute;
-  bottom: 100%;
-  left: 0;
-  margin-top: 10px;
-  border: 2px solid red;
-  border-radius: 20px;
-  width: 200px;
-  padding: 10px;
-}
-
-.option {
-  padding: 5px;
-  cursor: pointer;
-  list-style: none; /* Loại bỏ dấu đầu dòng */
-}
-
-.option:hover {
-  background-color: lightgray;
-  border-radius: 20px;
-}
-  </style>
-  
-  <script>
-    var customToggle = document.querySelector('.custom-toggle');
-var dropdownOptions = document.querySelector('.dropdown-options');
-var optionVisible = false; // Biến đánh dấu trạng thái hiển thị của dropdown options
-
-customToggle.addEventListener('click', function() {
-  if (!optionVisible) {
-    dropdownOptions.style.display = 'block';
-    optionVisible = true;
-  } else {
-    dropdownOptions.style.display = 'none';
-    optionVisible = false;
-  }
-});
-
-var options = document.querySelectorAll('.option');
-
-options.forEach(function(option) {
-  option.addEventListener('mouseover', function() {
-    option.classList.add('hovered');
-  });
-
-  option.addEventListener('mouseout', function() {
-    option.classList.remove('hovered');
-  });
-
-  option.addEventListener('click', function() {
-    console.log('Selected option:', option.textContent);
-    dropdownOptions.style.display = 'none';
-    optionVisible = false;
-  });
-});
-  </script>
-
 
 
   <!--FOOTER-->

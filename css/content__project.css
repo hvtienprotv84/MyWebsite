@@ -1,0 +1,30 @@
+.content__project{
+    color:red;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    padding: 5px;
+
+    animation: color-change 5s infinite;
+}
+  @keyframes color-change {
+0% {
+  color: rgb(0, 13, 255);
+}
+23% {
+  color: rgb(0, 255, 0);
+}
+54% {
+  color: rgb(0, 213, 255);
+}
+64% {
+  color: rgb(255, 170, 0);
+}
+80% {
+  color: rgb(162, 0, 255);
+}
+}
