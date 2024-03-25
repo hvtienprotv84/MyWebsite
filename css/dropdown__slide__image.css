@@ -100,3 +100,9 @@ a2:hover {
   padding: 0;
   border-bottom: 1px solid #cccccc;
 }
+
+.icon__study__project{
+  width: 30px !important;
+  height: 30px !important;
+  margin-left:-10px;
+}

@@ -85,6 +85,7 @@ nav ul li button{
   margin-left:25px;
   outline: none;
   cursor: pointer;
+  
 }
 nav ul li button:focus {
   outline: none;
@@ -346,3 +347,13 @@ p{
   font-size:16px;
   font-family: 'Poppins', sans-serif;
 }
+
+.footer__menu__CV__project{
+  margin-bottom: 10px;
+  margin-left: 35px;
+}
+
+#copyright__2024 span{
+  color:red;
+}
+

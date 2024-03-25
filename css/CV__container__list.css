@@ -1,0 +1,80 @@
+.container_hover-heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    block-size: 100%;
+    inline-size: 100%;
+  }
+  
+    .hover-heading::before {  
+      transform: scaleX(0);
+      transform-origin: bottom right;
+    }
+    
+    .hover-heading:hover::before {
+      transform: scaleX(1);
+      transform-origin: bottom left;
+    }
+    
+    .hover-heading::before {
+      content: " ";
+      display: block;
+      position: absolute;
+      top: 0; right: 0; bottom: 0; left: 0;
+      inset: 0 0 0 0;
+      background: hsl(200 100% 80%);
+      z-index: -1;
+      transition: transform .3s ease;
+      background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet, red);
+      background-size: 1400% 100%;
+      animation: gradientAnimation 10s linear infinite;
+    }
+    @keyframes gradientAnimation {
+      0% {
+        background-position: 0% 50%;
+      }
+      100% {
+        background-position: 100% 50%;
+      }
+    }
+    
+    .hover-heading {
+      position: relative;
+      font-size: 5rem;
+      color:red;
+      font-family: "Roboto", sans-serif;
+      animation: color-change 5s infinite;
+    }
+    @keyframes color-change {
+  0% {
+    color: rgb(0, 13, 255);
+  }
+  23% {
+    color: rgb(0, 255, 0);
+  }
+  54% {
+    color: rgb(0, 213, 255);
+  }
+  64% {
+    color: rgb(255, 170, 0);
+  }
+  80% {
+    color: rgb(162, 0, 255);
+  }
+  }
+  
+    .content {
+      min-block-size: 100%;
+      min-inline-size: 100%;
+      margin: 0;
+      box-sizing: border-box;
+      display: grid;
+      place-content: center;
+      font-family: system-ui, sans-serif;
+    }
+    
+    @media (orientation: landscape) {
+      .content {
+        grid-auto-flow: column;
+      }
+    }

@@ -1,7 +1,7 @@
 var images = [
   "https://res.cloudinary.com/cloudinary-marketing/images/v1649720751/Web_Assets/blog/Mario_1/Mario_1-gif?_i=AA",
   "https://blog.talent500.co/wp-content/uploads/2022/12/Mean-stack-scaled.jpg",
-  "https://www.wingstechsolutions.com/wp-content/uploads/2022/03/full-stack-development.gif"
+  "https://www.softprodigy.com/storage/2021/07/full-stack-development-gif.gif"
 ];
 
 var currentIndex = 0;
