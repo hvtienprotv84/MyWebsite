@@ -206,7 +206,16 @@
   
   <div class="container__contact">
     <div class="col-sm-6">
-        <h1>Liên Hệ Với Tôi</h1>
+        <h1 
+        data-lang="vi" 
+        data-lang-en="Contact Me" 
+        data-lang-vi="Liên Hệ Với Tôi" 
+        data-lang-de="Kontaktiere mich" 
+        data-lang-kr="저에게 연락하세요"
+        data-lang-jp="私に連絡して">
+        Liên Hệ Với Tôi
+        </h1>
+
         <form method="post" autocomplete="off" id="myForm" name="google-sheet">
             <div class="form-group">
                 <input type="text" name="Name" class="form-control" placeholder="Nhập Tên Của Bạn" value="" required=""/>
@@ -231,6 +240,12 @@
   .container__contact{
     display: flex;
     justify-content: center;
+  }
+  .container__contact h1{
+    display: flex;
+    justify-content: center;
+    padding:20px;
+    font-weight: bold;
   }
 </style>
 
