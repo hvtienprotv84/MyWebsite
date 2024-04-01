@@ -89,3 +89,38 @@
   .image__border__myskill__ide img:last-child {
     margin-right: 0; /* Loại bỏ margin phía bên phải của ảnh cuối cùng */
   }
+
+  /* Quy tắc cho PC */
+  @media screen and (min-width: 1025px) {
+    /* Các quy tắc CSS dành cho PC */
+    .my-element {
+      font-size: 20px;
+    }
+  }
+
+  /* Quy tắc cho máy tính bảng */
+  @media screen and (min-width: 601px) and (max-width: 1024px) {
+    /* Các quy tắc CSS dành cho máy tính bảng */
+    .my-element {
+      font-size: 16px;
+    }
+  }
+
+  /* Quy tắc cho điện thoại di động */
+  @media screen and (max-width: 600px) {
+    /* Các quy tắc CSS dành cho điện thoại di động */
+    .border__myskill__ide{
+      border: 2px solid #333;
+      border-radius: 10px;
+      padding: 20px;
+      width: 1000px;
+      height: 100px;
+    }
+
+    .image__border__myskill__ide img {
+      width: 60px;
+      height: 60px;
+      margin-right: 20px; /* Tạo khoảng cách 10px giữa các ảnh */
+      margin-top: -860px;
+    }
+  }

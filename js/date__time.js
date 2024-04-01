@@ -1,6 +1,6 @@
 window.addEventListener('DOMContentLoaded', function() {
     var daysOfWeek = ['Sunday', 'Monday', 'Tuesday', 'Webnesday', 'Thursday', 'Friday', 'Saturday'];
-    var monthsOfYear = ['Tháng 01', 'Tháng 02', 'March', 'Tháng 04', 'Tháng 05', 'Tháng 06', 'Tháng 07', 'Tháng 08', 'Tháng 09', 'Tháng 10', 'Tháng 11', 'Tháng 12'];
+    var monthsOfYear = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
   
     function formatDate(date) {
       var day = daysOfWeek[date.getDay()];
