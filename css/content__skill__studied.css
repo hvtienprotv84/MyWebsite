@@ -126,7 +126,7 @@
     margin-right: 50px; /* Tạo khoảng cách 10px giữa các ảnh */
   }
   #icon_firebase{
-    margin-left:-190px;
+    margin-left:-450px;
   }
   
   .image__border__myskill__studied__3 img:last-child {
@@ -175,5 +175,8 @@
     height: 60px;
     margin-right: 20px; /* Tạo khoảng cách 10px giữa các ảnh */
     margin-top: -750px;
+    }
+    #icon_firebase{
+      margin-left:-190px;
     }
   }
